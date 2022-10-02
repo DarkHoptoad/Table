@@ -1,14 +1,12 @@
-import { Preloader } from "./Preloader/Preloader";
-
- 
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home"; //Импорт стартовой страницы
 
 function App() {
-
-
   return (
-    <div className="container">
-       <Preloader/>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />{" "}
+      {/*Использование стартовой страницы*/}
+    </Routes>
   );
 }
 
